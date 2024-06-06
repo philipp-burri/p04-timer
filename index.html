@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   
+    <title>Timer</title>
+    
+</head>
+<body>
+    <header>
+        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.5 8.43A4.985 4.985 0 0 1 19 12a4.984 4.984 0 0 1-1.43 3.5M14 6.135v11.73a1 1 0 0 1-1.64.768L8 15H6a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1h2l4.36-3.633a1 1 0 0 1 1.64.768Z"/>
+          
+        
+        </svg>
+        <button id="mute-unmute" class="unmuted" onclick="toggleMute()">
+            <span class="slider"></span>
+          </button>  
+      
+        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.5 8.43A4.985 4.985 0 0 1 17 12c0 1.126-.5 2.5-1.5 3.5m2.864-9.864A8.972 8.972 0 0 1 21 12c0 2.023-.5 4.5-2.5 6M7.8 7.5l2.56-2.133a1 1 0 0 1 1.64.768V12m0 4.5v1.365a1 1 0 0 1-1.64.768L6 15H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1m1-4 14 14"/>
+          </svg>
+          
+        
+    </header>
+    <section>
+        <div id="countdown">00 00:00 :00</div>
+    </section>
+   
+
+    <div class="wrapper">
+        <div class="input-container">
+            <div class="card-container">
+                <div class="time-title">
+                    <h2>DAYS</h2>
+                </div>
+                <input type="number" id="inputDays">
+            </div>
+            <div class="card-container">
+                <div class="time-title">
+                    <h2>HOURS</h2>
+                </div>
+                <input type="number" id="inputHours">
+            </div>
+            <div class="card-container">
+                <div class="time-title">
+                    <h2>MINUTES</h2>
+                </div>
+                <input type="number" id="inputMinutes">
+            </div>
+            <div class="card-container">
+                <div class="time-title">
+                    <h2>SECONDS</h2>
+                </div>
+                <input type="number" id="inputSeconds">
+            </div>
+        </div> 
+        <div class="buttons">
+            <button id="start">START</button>
+            <button id="stop">STOP</button>
+            <button id="reset">RESET</button>
+        </div>
+    </div> 
+
+    <script src="script.js"></script>
+</body>
+</html>
