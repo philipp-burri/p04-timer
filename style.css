@@ -74,11 +74,7 @@ h2{
     transition: all 0.5s ease;
     opacity: 0.85;
 
-
 }
-
-
-
 
 
 header{
@@ -196,9 +192,6 @@ section{
     justify-content: center;
     border-color: white;
     flex-wrap: wrap;
-    
-
-
 }
 
 #start:hover {
@@ -233,8 +226,7 @@ section{
     font-size: 30px;
     font-weight: bold;
     border-color: white;
-    border-style: solid;
-    
+    border-style: solid; 
 
 }
 #stop{
@@ -248,7 +240,6 @@ section{
     font-weight: bold;
     border-color: white;
     border-style: solid;
-    
 
 }
 
@@ -265,7 +256,6 @@ section{
     border-style: solid;
 
 }
-
 
 /*-----------------------------------*/
 
